@@ -13,3 +13,4 @@ C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Database\obj
 C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Database\bin\Debug\net7.0\Core.dll
 C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Database\bin\Debug\net7.0\Core.pdb
 C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Database\obj\Debug\net7.0\Database.csproj.Up2Date
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Database\obj\Debug\net7.0\Database.sourcelink.json

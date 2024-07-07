@@ -10,3 +10,4 @@ C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Core\obj\Deb
 C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Core\obj\Debug\net7.0\refint\Core.dll
 C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Core\obj\Debug\net7.0\Core.pdb
 C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Core\obj\Debug\net7.0\ref\Core.dll
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\Core\obj\Debug\net7.0\Core.sourcelink.json

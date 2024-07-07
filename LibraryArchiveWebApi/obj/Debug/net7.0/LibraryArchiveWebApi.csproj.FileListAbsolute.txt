@@ -268,3 +268,4 @@ C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\LibraryArchi
 C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\LibraryArchiveWebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\LibraryArchiveWebApi\bin\Debug\net7.0\DataAccess.dll
 C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\LibraryArchiveWebApi\bin\Debug\net7.0\DataAccess.pdb
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\LibraryArchiveWebApi\obj\Debug\net7.0\LibraryArchiveWebApi.sourcelink.json
