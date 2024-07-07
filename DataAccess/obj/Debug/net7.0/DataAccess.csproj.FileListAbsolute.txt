@@ -1,0 +1,17 @@
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\bin\Debug\net7.0\DataAccess.deps.json
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\bin\Debug\net7.0\DataAccess.dll
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\bin\Debug\net7.0\DataAccess.pdb
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\bin\Debug\net7.0\Core.dll
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\bin\Debug\net7.0\Database.dll
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\bin\Debug\net7.0\Database.pdb
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\bin\Debug\net7.0\Core.pdb
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\DataAccess.csproj.Up2Date
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\DataAccess.dll
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\refint\DataAccess.dll
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\DataAccess.pdb
+C:\Users\ANKABETA-10\Desktop\CaseLibraryWebApi\LibraryArchiveWebApi\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll

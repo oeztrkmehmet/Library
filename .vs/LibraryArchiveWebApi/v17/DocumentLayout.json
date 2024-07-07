@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\libraryarchivewebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|solutionrelative:libraryarchivewebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\libraryarchivewebapi\\models\\book\\bookcreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|solutionrelative:libraryarchivewebapi\\models\\book\\bookcreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\database\\entities\\libraryentities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|solutionrelative:database\\entities\\libraryentities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\database\\entities\\userentities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|solutionrelative:database\\entities\\userentities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\libraryarchivewebapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|solutionrelative:libraryarchivewebapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\libraryarchivewebapi\\models\\book\\bookupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|solutionrelative:libraryarchivewebapi\\models\\book\\bookupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\libraryarchivewebapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA83071-40DF-4877-A91E-6ECF69283C8E}|LibraryArchiveWebApi\\LibraryArchiveWebApi.csproj|solutionrelative:libraryarchivewebapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B8CCFC-8F13-4D6C-84FB-3E56E0B6AE4D}|DataAccess\\DataAccess.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\dataaccess\\concrete\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B8CCFC-8F13-4D6C-84FB-3E56E0B6AE4D}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\concrete\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Migrations\\20240706185651_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Database\\Migrations\\20240706185651_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\database\\dtos\\book\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|solutionrelative:database\\dtos\\book\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\database\\entities\\userentities\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|solutionrelative:database\\entities\\userentities\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B8CCFC-8F13-4D6C-84FB-3E56E0B6AE4D}|DataAccess\\DataAccess.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\dataaccess\\abstract\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B8CCFC-8F13-4D6C-84FB-3E56E0B6AE4D}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\abstract\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B8CCFC-8F13-4D6C-84FB-3E56E0B6AE4D}|DataAccess\\DataAccess.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\dataaccess\\concrete\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B8CCFC-8F13-4D6C-84FB-3E56E0B6AE4D}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\concrete\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|c:\\users\\ankabeta-10\\desktop\\caselibrarywebapi\\libraryarchivewebapi\\database\\migrations\\20240706190515_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB1E690F-DC5C-42CB-9C0A-F34422DB4041}|Database\\Database.csproj|solutionrelative:database\\migrations\\20240706190515_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryArchiveWebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Program.cs",
+              "RelativeToolTip": "LibraryArchiveWebApi\\Program.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAAEQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T10:36:15.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookUpdateModel.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Models\\Book\\BookUpdateModel.cs",
+              "RelativeDocumentMoniker": "LibraryArchiveWebApi\\Models\\Book\\BookUpdateModel.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Models\\Book\\BookUpdateModel.cs",
+              "RelativeToolTip": "LibraryArchiveWebApi\\Models\\Book\\BookUpdateModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T19:13:09.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "LibraryArchiveWebApi\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "LibraryArchiveWebApi\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAnwF0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T17:33:39.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\DTOS\\Book\\BookDTO.cs",
+              "RelativeDocumentMoniker": "Database\\DTOS\\Book\\BookDTO.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\DTOS\\Book\\BookDTO.cs",
+              "RelativeToolTip": "Database\\DTOS\\Book\\BookDTO.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:05:15.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "LibraryArchiveWebApi\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Controllers\\BookController.cs",
+              "RelativeToolTip": "LibraryArchiveWebApi\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAArwFoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T17:51:07.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Entities\\UserEntities\\AppUser.cs",
+              "RelativeDocumentMoniker": "Database\\Entities\\UserEntities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Entities\\UserEntities\\AppUser.cs",
+              "RelativeToolTip": "Database\\Entities\\UserEntities\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:45:08.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Entities\\LibraryEntities\\Book.cs",
+              "RelativeDocumentMoniker": "Database\\Entities\\LibraryEntities\\Book.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Entities\\LibraryEntities\\Book.cs",
+              "RelativeToolTip": "Database\\Entities\\LibraryEntities\\Book.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwBAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:53:44.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookCreateModel.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Models\\Book\\BookCreateModel.cs",
+              "RelativeDocumentMoniker": "LibraryArchiveWebApi\\Models\\Book\\BookCreateModel.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\LibraryArchiveWebApi\\Models\\Book\\BookCreateModel.cs",
+              "RelativeToolTip": "LibraryArchiveWebApi\\Models\\Book\\BookCreateModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T17:48:39.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20240706185651_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Migrations\\20240706185651_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Database\\Migrations\\20240706185651_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Migrations\\20240706185651_InitialCreate.cs",
+              "RelativeToolTip": "Database\\Migrations\\20240706185651_InitialCreate.cs",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAnwNQAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:56:51.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240706190515_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Migrations\\20240706190515_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Database\\Migrations\\20240706190515_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Migrations\\20240706190515_InitialCreate.cs",
+              "RelativeToolTip": "Database\\Migrations\\20240706190515_InitialCreate.cs",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAQwAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T19:05:15.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\DataAccess\\Concrete\\BookRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Concrete\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\DataAccess\\Concrete\\BookRepository.cs",
+              "RelativeToolTip": "DataAccess\\Concrete\\BookRepository.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAASwDAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:06:53.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\DataAccess\\Concrete\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Concrete\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\DataAccess\\Concrete\\CategoryRepository.cs",
+              "RelativeToolTip": "DataAccess\\Concrete\\CategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:06:50.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppRole.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Entities\\UserEntities\\AppRole.cs",
+              "RelativeDocumentMoniker": "Database\\Entities\\UserEntities\\AppRole.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\Database\\Entities\\UserEntities\\AppRole.cs",
+              "RelativeToolTip": "Database\\Entities\\UserEntities\\AppRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:45:07.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\DataAccess\\Abstract\\IBookRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Abstract\\IBookRepository.cs",
+              "ToolTip": "C:\\Users\\ANKABETA-10\\Desktop\\CaseLibraryWebApi\\LibraryArchiveWebApi\\DataAccess\\Abstract\\IBookRepository.cs",
+              "RelativeToolTip": "DataAccess\\Abstract\\IBookRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAcwA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T18:07:54.538Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
