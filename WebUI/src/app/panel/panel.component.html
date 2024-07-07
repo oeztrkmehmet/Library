@@ -1,0 +1,42 @@
+
+<div class="d-flex" style="min-height: 100vh;">
+  <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <span class="fs-4">Library</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+              <a routerLink="/home" routerLinkActive="active" class="nav-link link-body-emphasis"  [routerLinkActiveOptions]="{ exact: true }">
+                  Home
+              </a>
+          </li>
+          <li>
+              <a routerLink="/category" routerLinkActive="active" class="nav-link link-body-emphasis">
+                  Category
+              </a>
+          </li>
+          <li>
+              <a routerLink="/books" routerLinkActive="active" class="nav-link link-body-emphasis">
+                  Books
+              </a>
+          </li>
+          <li>
+              <a routerLink="/authors" routerLinkActive="active" class="nav-link link-body-emphasis">
+                  Authors
+              </a>
+          </li>
+      </ul>
+      <hr>
+      <div class="dropdown">
+          <a (click)="logout()" class="nav-link link-body-emphasis">
+              Logout
+          </a>
+      </div>
+  </div>
+  <div class="flex-grow-1">
+      <!-- Ana içerik buraya gelecek -->
+      <!-- Örneğin router-outlet ile dinamik içerik gösterebilirsiniz -->
+      <router-outlet></router-outlet>
+  </div>
+</div>

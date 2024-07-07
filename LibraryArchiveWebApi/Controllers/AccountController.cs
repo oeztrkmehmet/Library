@@ -28,7 +28,7 @@ namespace LibraryArchiveWebApi.Controllers
         }
         [HttpPost("Login")]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(string userName = "", string password = "")
+        public async Task<IActionResult> Login(string userName, string password)
         {
             if (!string.IsNullOrEmpty(userName) && !string.IsNullOrEmpty(password))
             {
@@ -52,7 +52,7 @@ namespace LibraryArchiveWebApi.Controllers
                             _configuration["JwtSettings:Issuer"],
                             _configuration["JwtSettings:Audience"],
                             claims,
-                            expires: DateTime.Now.AddMinutes(10),
+                            expires: DateTime.Now.AddMinutes(1461),
                             signingCredentials: creds
                         );
                         var tokenResp = new JwtSecurityTokenHandler().WriteToken(token);

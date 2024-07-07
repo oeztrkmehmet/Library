@@ -8,7 +8,7 @@ namespace Database.DTOS.Author
 {
     public class AuthorDTO
     {
-        public Guid ID { get; set; }
+        public Guid? ID { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
     }
