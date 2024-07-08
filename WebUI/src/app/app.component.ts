@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PanelComponent } from './panel/panel.component';
 import { HomeComponent } from './home/home.component';
@@ -19,4 +19,9 @@ import { ModalComponent } from './modal/modal.component';
 })
 export class AppComponent {
   title = 'WebUI';
+  @ViewChild(ModalComponent) modal:ModalComponent;
+
+  open(){
+    this.modal.openModal('Task Title','Task has benn completed succesfully');
+  }
 }

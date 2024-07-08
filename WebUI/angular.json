@@ -30,7 +30,10 @@
               "src/assets/css/sidebar.css"
             ],
             "scripts": [
-              "src/assets/js/sidebar.js"
+              "src/assets/js/sidebar.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js"
             ],
             "server": "src/main.server.ts",
             "prerender": true,

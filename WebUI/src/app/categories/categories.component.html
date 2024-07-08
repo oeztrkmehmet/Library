@@ -20,8 +20,8 @@
                     <button class="btn btn-info btn-sm me-2">
                         <i class="bi bi-eye"></i> Görüntüle
                     </button>
-                    <button class="btn btn-warning btn-sm me-2">
-                        <i class="bi bi-pencil"></i> Güncelle
+                    <button class="btn btn-warning btn-sm me-2"(click)="openopen()">
+                        <i class="bi bi-pencil" ></i> Güncelle
                     </button>
                     <button class="btn btn-danger btn-sm">
                         <i class="bi bi-trash"></i> Sil
@@ -31,5 +31,30 @@
         </tbody>
     </table>
 </div>
+<!-- <div #modal class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <app-modal #modal  aria-modal="true">
+    <div class="col-xs-12 text-center">
+      <i class="fa-solid fa-check call-tick"></i>
+      <h3>title</h3>
+      <p >deneme</p>
+     
+    </div>
+  </app-modal>
 
 

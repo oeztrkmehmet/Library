@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, inject, NO_ERRORS_SCHEMA } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, NO_ERRORS_SCHEMA, ViewChild } from '@angular/core';
 import { CategoriesService } from './categories.service';
 import { FormBuilder } from '@angular/forms';
 import { ResponseCategories } from './categories.model';
@@ -16,7 +16,9 @@ import { ModalComponent } from '../modal/modal.component';
 
 })
 export class CategoriesComponent {
+  @ViewChild(ModalComponent) modal:ModalComponent;
 
+  
 
 
   constructor(
@@ -29,6 +31,10 @@ export class CategoriesComponent {
 
   }
   categories: ResponseCategories[] = [];
+  openopen(){
+    console.log('meottda')
+    this.modal.openModal('Task Title','Task has benn completed succesfully');
+  }
 
   getAllCategories(): void {
     console.log('metotda')
