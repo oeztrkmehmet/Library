@@ -3,3 +3,11 @@ export interface ResponseAuthors {
     name: string;
     surname:string;
   }
+
+  export interface ResponseBooks {
+    id: string;
+    title: string;
+    description:string;
+    authorID:string;
+    categoryID:string;
+  }

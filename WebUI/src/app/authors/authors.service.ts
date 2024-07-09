@@ -34,5 +34,8 @@ export class AuthorsService {
     const url = `${this.apiUrl}/DeleteAuthor?id=${id}`;
     return this.http.delete(url);
   }
-
+  getAllBook(): Observable<any[]> {
+    const url = `${this.apiUrl}/GetAllBooks`; 
+    return this.http.get<any[]>(url);
+  }
 }

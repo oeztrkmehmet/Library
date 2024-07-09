@@ -1,11 +1,11 @@
 import { ChangeDetectorRef, Component, inject, NO_ERRORS_SCHEMA, ViewChild } from '@angular/core';
 import { CategoriesService } from './categories.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ResponseCategories } from './categories.model';
+import { ResponseBooks, ResponseCategories } from './categories.model';
 import { CommonModule } from '@angular/common';
 import { ModalComponent } from '../modal/modal.component';
 import { MatTabsModule } from '@angular/material/tabs'
-
+declare var alertify:any;
 
 @Component({
   selector: 'app-categories',
@@ -21,6 +21,8 @@ export class CategoriesComponent {
   formCategory: FormGroup;
   selectedCategory: ResponseCategories | null; 
   categories: ResponseCategories[] = [];
+  Books: ResponseBooks[] = [];
+
 
   @ViewChild('modalUpdate') modal:ModalComponent;
   @ViewChild('modalAdd') modalAdd:ModalComponent;
@@ -38,8 +40,8 @@ export class CategoriesComponent {
       name: [null, [Validators.required]],
     });
   this.getAllCategories();
-
-
+  alertify.set('notifier', 'position', 'top-right');
+  this.getAllBook();
   }
   open(){
     this.modal.openModal('Category');
@@ -48,6 +50,7 @@ export class CategoriesComponent {
     this.modal.closeModal();
   }
   openAdd(){
+    this.formCategory.reset();
     this.modalAdd.openModal('Category Add')
   }
   closeAddModal(){
@@ -79,12 +82,10 @@ export class CategoriesComponent {
   }
   
   getAllCategories(): void {
-    console.log('metotda')
     this.categoriesService.getAll()
       .subscribe(
         (data) => {
           this.categories = data;
-          console.log('Categories:', this.categories);
         },
         (error) => {
           console.error('Error fetching categories:', error);
@@ -93,21 +94,28 @@ export class CategoriesComponent {
   }
   add(){
     if(this.formCategory.valid){
+      const filteredAuthor=this.categories.filter((item)=>item.name==this.formCategory.value.name)
+      if(filteredAuthor.length>0){
+        alertify.error('It\'s from the same category')
+      }
+     else{
       const categoryName = this.formCategory.get('name')?.value;
       this.categoriesService.CategoryAdd(categoryName).subscribe(
         (response) => {
-          console.log('Category added successfully', response);
+          alertify.success('Category Added')
+
           this.getAllCategories();
           this.closeAddModal();
           this.formCategory.reset();
         },
         (error) => {
-          console.error('Error adding category', error);
+          alertify.error('Category could not be added')
           this.getAllCategories();
           this.closeAddModal();
           this.formCategory.reset();
         }
       );
+    }
     }
     else{
       window.alert('Zorunlu Alanları Giriniz.');
@@ -116,22 +124,28 @@ export class CategoriesComponent {
 
   update(){
     if(this.formCategory.valid){
+      const filteredAuthor=this.categories.filter((item)=>item.name==this.formCategory.value.name)
+     if(this.selectedCategory?.name!=this.formCategory.value.name.toString()&&filteredAuthor.length>0){
+      alertify.error('It\'s from the same category')
+     }
+     else{
       const categoryName = this.formCategory.get('name')?.value;
       const Id = this.selectedCategory!.id;
       this.categoriesService.CategoryUpdate(categoryName,Id).subscribe(
         (response) => {
-          console.log('Category added successfully', response);
+          alertify.success('Category updated')
           this.getAllCategories();
           this.closeModal();
           this.formCategory.reset();
         },
         (error) => {
-          console.error('Error adding category', error);
+          alertify.error('Category could not be updated')
           this.getAllCategories();
           this.closeModal();
           this.formCategory.reset();
         }
       );
+    }
     }
     else{
       window.alert('Zorunlu Alanları Giriniz.');
@@ -140,18 +154,36 @@ export class CategoriesComponent {
 
 
   deleteCategoryById(): void {
+    const filteredBook=this.Books.filter((item)=>item.categoryID==this.selectedCategory?.id)
+
+    if(filteredBook.length>0){alertify.error('There are books in this category that use')}
+  else{
     this.categoriesService.deleteCategory(this.selectedCategory!.id).subscribe(
       () => {
-        console.log('Category deleted successfully');
+        alertify.error('Category Deleted')
+
         this.closeDelete();
         this.getAllCategories();
       },
       (error) => {
+        alertify.error('Category Deleted')
+
         this.getAllCategories();
         this.closeDelete();
       }
     );
   }
- 
+  }
+  getAllBook(): void {
+    this.categoriesService.getAllBook()
+      .subscribe(
+        (data) => {
+          this.Books = data;
+        },
+        (error) => {
+          console.error('Error fetching Books:', error);
+        }
+      );
+  }
 
 }

@@ -5,6 +5,7 @@ import { ModalComponent } from '../modal/modal.component';
 import { MatTabsModule } from '@angular/material/tabs'
 import { BooksService } from './books.service';
 import { ResponseAuthors, ResponseBooks, ResponseCategories } from './books.model';
+declare var alertify:any;
 
 @Component({
   selector: 'app-books',
@@ -42,6 +43,8 @@ export class BooksComponent {
   this.getAllBooks();
   this.GetAllAuthors();
   this.GetAllCategories();
+  alertify.set('notifier', 'position', 'top-right');
+
   }
 
   open(){
@@ -88,12 +91,10 @@ export class BooksComponent {
     this.open();
   }
   getAllBooks(): void {
-    console.log('metotda')
     this.booksService.getAll()
       .subscribe(
         (data) => {
           this.Books = data;
-          console.log('Books:', this.Books);
         },
         (error) => {
           console.error('Error fetching Books:', error);
@@ -109,13 +110,13 @@ export class BooksComponent {
       const BookCategoryID = this.formBook.get('categoryID')?.value;
       this.booksService.BookAdd(BookTitle,BookDescription,BookAuthorID,BookCategoryID).subscribe(
         (response) => {
-          console.log('Book added successfully', response);
+          alertify.success('Book Added')
           this.getAllBooks();
           this.closeAddModal();
           this.formBook.reset();
         },
         (error) => {
-          console.error('Error adding Book', error);
+          alertify.error('Book could not be added')
           this.getAllBooks();
           this.closeAddModal();
           this.formBook.reset();
@@ -135,13 +136,13 @@ export class BooksComponent {
       const BookCategoryID = this.formBook.get('categoryID')?.value;
       this.booksService.BookUpdate(this.selectedBook!.id,BookTitle,BookDescription,BookAuthorID,BookCategoryID).subscribe(
         (response) => {
-          console.log('Author added successfully', response);
+          alertify.success('Book updated')
           this.getAllBooks();
           this.closeModal();
           this.formBook.reset();
         },
         (error) => {
-          console.error('Error adding Book', error);
+          alertify.error('Category could not be updated')
           this.getAllBooks();
           this.closeModal();
           this.formBook.reset();
@@ -155,11 +156,14 @@ export class BooksComponent {
   deleteBookById(): void {
     this.booksService.deleteBook(this.selectedBook!.id).subscribe(
       () => {
-        console.log('Book deleted successfully');
+        alertify.error('Book Deleted')
+
         this.closeDelete();
         this.getAllBooks();
       },
       (error) => {
+        alertify.error('Book Deleted')
+
         this.getAllBooks();
         this.closeDelete();
       }
@@ -171,7 +175,6 @@ export class BooksComponent {
       .subscribe(
         (data) => {
           this.Authors = data;
-          console.log('Authors:', this.Authors);
         },
         (error) => {
           console.error('Error fetching Authors:', error);
@@ -179,12 +182,10 @@ export class BooksComponent {
       );
   }
   GetAllCategories(): void {
-    console.log('metotda')
     this.booksService.GetAllCategories()
       .subscribe(
         (data) => {
           this.Categories = data;
-          console.log('Categories:', this.Categories);
         },
         (error) => {
           console.error('Error fetching Books:', error);

@@ -1,10 +1,14 @@
+<h2>BOOKS</h2>
+
 <div class="container-fluid">
    
     <div class="text-end mb-3">
+      
         <button class="btn btn-primary" (click)="openAdd()">
             <i class="bi bi-plus"></i> Add
         </button>
     </div>
+
     <table class="table">
         <thead>
             <tr>
@@ -41,9 +45,9 @@
 
 
   <app-modal #modalDelete  aria-modal="true">
-    <div class="col-xs-12 text-center" (click)="deleteBookById()">
-    <button type="button" class="btn btn-danger">Yes</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeAddModal()">No</button>
+    <div class="col-xs-12 text-center" >
+    <button type="button" class="btn btn-danger" (click)="deleteBookById()">Yes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeDelete()">No</button>
         </div>
   </app-modal>
 

@@ -1,3 +1,5 @@
+<h2>AUTHORS</h2>
+
 <div class="container-fluid">
     <div class="row">
     <div class="text-end mb-3">
@@ -39,9 +41,9 @@
 
 
   <app-modal #modalDelete  aria-modal="true">
-    <div class="col-xs-12 text-center" (click)="deleteAuthorById()">
-    <button type="button" class="btn btn-danger">Yes</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeAddModal()">No</button>
+    <div class="col-xs-12 text-center" >
+    <button type="button" class="btn btn-danger" (click)="deleteAuthorById()">Yes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeDelete()">No</button>
         </div>
   </app-modal>
 

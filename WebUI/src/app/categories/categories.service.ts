@@ -34,5 +34,9 @@ export class CategoriesService {
     const url = `${this.apiUrl}/DeleteCategory?id=${id}`;
     return this.http.delete(url);
   }
+  getAllBook(): Observable<any[]> {
+    const url = `${this.apiUrl}/GetAllBooks`; 
+    return this.http.get<any[]>(url);
+  }
 
 }

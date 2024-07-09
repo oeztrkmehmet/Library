@@ -6,6 +6,8 @@ import { UserForAuthenticationDto } from './models/user.model';
 import { HttpErrorResponse } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { first } from 'rxjs';
+declare var alertify:any;
+
 export function passwordValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
     const value = control.value;
@@ -50,11 +52,13 @@ export class LoginComponent implements OnInit {
       nameSurname: [null, [Validators.required]],
       phoneNumber: [null, [Validators.required]],
     });
+    
   }
   
 
   ngOnInit(): void {
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+    
   }
 
   validateControl = (controlName: string) => {
@@ -76,12 +80,10 @@ export class LoginComponent implements OnInit {
     this.authService.loginUser('api/Account/Login', userForAuth)
       .subscribe({
         next: (response: string) => {
-          console.log('res', response);
           localStorage.setItem('token', response);
           this.router.navigate([this.returnUrl]);
         },
         error: (err: HttpErrorResponse) => {
-          console.log('err', err);
           this.errorMessage = err.error;
           this.showError = true;
         }
@@ -107,13 +109,16 @@ export class LoginComponent implements OnInit {
         phoneNumber: this.formRegister.value.phoneNumber
       }).pipe(first()).subscribe(
         (response) => {
-          console.log('Author added successfully', response);
+          
+          alertify.set('notifier', 'position', 'top-right');
+          alertify.success('User Registered');
           this.CloseRegister();
           this.formRegister.reset();
           // this.loginForm.reset();
         },
         (error) => {
-          console.error('Error adding Author', error);
+          alertify.set('notifier', 'position', 'top-right');
+          alertify.error('User Could Not Be Registered');
           this.CloseRegister();
           this.formRegister.reset();
           // this.loginForm.reset();
