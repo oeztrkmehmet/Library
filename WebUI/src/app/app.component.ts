@@ -22,6 +22,6 @@ export class AppComponent {
   @ViewChild(ModalComponent) modal:ModalComponent;
 
   open(){
-    this.modal.openModal('Task Title','Task has benn completed succesfully');
+    this.modal.openModal('Task Title');
   }
 }

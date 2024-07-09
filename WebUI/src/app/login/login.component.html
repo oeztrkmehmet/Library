@@ -1,11 +1,11 @@
 <div class="card">
     <div class="card-body">
-        <h1 class="card-title">Login</h1>
+        <h1 class="card-title">{{ isRegister ? 'Register' : 'Login' }}</h1>
         <div *ngIf="showError" class="alert alert-danger" role="alert">
             {{errorMessage}}
         </div>
-        
-        <form [formGroup]="loginForm" autocomplete="off" novalidate (ngSubmit)="loginUser(loginForm.value)">
+        <!-- Login -->
+        <form *ngIf="!isRegister" [formGroup]="loginForm" autocomplete="off" novalidate (ngSubmit)="loginUser(loginForm.value)">
             <div class="mb-3 row">
                 <label for="userName" class="col-form-label col-sm-2">Username:</label>
                 <div class="col-md-5">
@@ -25,11 +25,92 @@
                 </div> -->
             </div>
             <br>
-            <div class="mb-3 row">
+            <!-- <div class="mb-3 row">
                 <div class="col-md-1">
                     <button type="submit" class="btn btn-info" [disabled]="!loginForm.valid">Login</button>
                 </div>
+            </div> -->
+            <div class="mb-3 row">
+                <div class="col-md-1 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-info" [disabled]="!loginForm.valid">Login</button>
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-secondary" (click)="openRegister()">Register</button>
+                </div>
             </div>
+            
+            
+            
+        </form>
+        <!-- Register -->
+        <form *ngIf="isRegister" [formGroup]="formRegister" autocomplete="off" novalidate (ngSubmit)="loginUser(loginForm.value)">
+            <div class="mb-3 row">
+                <label for="userNameRegister" class="col-form-label col-sm-2">User Name:</label>
+                <div class="col-md-5">
+                    <input type="text" id="userNameRegister" formControlName="userNameRegister" class="form-control" placeholder="user@name.com" />
+                    <div
+                    *ngIf="formRegister.get('userNameRegister')?.invalid"
+                    style="color: red"
+                  >
+                  Username must be in email format (such as user&#64;name.com)
+                  </div>
+                </div>
+                <!-- <div class="col-md-5">
+                    <em *ngIf="validateControl('userName') && hasError('userName', 'required')">Username is required</em>
+                </div> -->
+            </div>
+            <div class="mb-3 row">
+                <label for="passwordRegister" class="col-form-label col-sm-2">Password:</label>
+                <div class="col-md-5">
+                    <input type="text" id="passwordRegister" formControlName="passwordRegister" class="form-control" />
+                    <div
+                    *ngIf="formRegister.get('passwordRegister')?.invalid"
+                    style="color: red"
+                  >
+                  Your password must be at least 4 characters, contain at least 1 uppercase letter and at least 1 number.(such as 1Qwe)
+                  </div>
+                </div>
+                <!-- <div class="col-md-5">
+                    <em *ngIf="validateControl('password') && hasError('password', 'required')">Password is required</em>
+                </div> -->
+            </div>
+            <div class="mb-3 row">
+                <label for="password" class="col-form-label col-sm-2">Name Surname:</label>
+                <div class="col-md-5">
+                    <input type="nameSurname" id="nameSurname" formControlName="nameSurname" class="form-control" />
+                    <div
+                    *ngIf="formRegister.get('nameSurname')?.invalid"
+                    style="color: red"
+                  >
+                    Name Surname required.
+                  </div>
+                </div>
+                <!-- <div class="col-md-5">
+                    <em *ngIf="validateControl('password') && hasError('password', 'required')">Password is required</em>
+                </div> -->
+            </div>
+            <div class="mb-3 row">
+                <label for="password" class="col-form-label col-sm-2">Phone:</label>
+                <div class="col-md-5">
+                    <input type="phoneNumber" id="phoneNumber" formControlName="phoneNumber" class="form-control" />
+                    <div
+                    *ngIf="formRegister.get('phoneNumber')?.invalid"
+                    style="color: red"
+                  >
+                  Phone Number required.
+                  </div>
+                </div>
+            </div>
+            <br>
+            <div class="mb-3 row">
+                <div class="col-md-1 d-flex justify-content-end">
+                    <button type="button" class="btn btn-success" (click)="registerUser()" [disabled]="formRegister.invalid">Register</button>
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-secondary" (click)="CloseRegister()">Cancel</button>
+                </div>
+            </div>
+            
         </form>
     </div>
   </div>

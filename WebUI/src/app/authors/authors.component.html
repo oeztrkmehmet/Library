@@ -1,1 +1,138 @@
-<p>authors works!</p>
+<div class="container-fluid">
+    <div class="row">
+    <div class="text-end mb-3">
+        <button class="btn btn-primary" (click)="openAdd()">
+            <i class="bi bi-plus"></i> Add
+        </button>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col"> Name</th>
+                <th scope="col"> Surname</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let author of Authors; let i = index">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ author.name }}</td>
+                <td>{{ author.surname }}</td>
+                <td>
+                    <button class="btn btn-warning btn-sm me-2"(click)="EditWithOpen(author.id)">
+                        <i class="bi bi-pencil" ></i> Update
+                    </button>
+                    <button class="btn btn-danger btn-sm" (click)="openDelete(author.id)">
+                        <i class="bi bi-trash"></i> Delete
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+  
+
+
+
+
+  <app-modal #modalDelete  aria-modal="true">
+    <div class="col-xs-12 text-center" (click)="deleteAuthorById()">
+    <button type="button" class="btn btn-danger">Yes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeAddModal()">No</button>
+        </div>
+  </app-modal>
+
+  <app-modal #modalAdd  aria-modal="true">
+    <form [formGroup]="formAuthor" class="form">
+        <table
+          class="table is-bordered is-striped is-hoverable is-fullwidth is-narrow">
+          <tr>
+            <td>
+              <div class="mb-12">
+                <label class="col-lg-8 col-form-label required fs-6">Author Name</label>
+                <div class="col-lg-12">
+                  <input type="text" formControlName="name"  class="form-control form-control-lg form-control-solid"  name="name" id="name"/>
+                  <div
+                    *ngIf="formAuthor.get('name')?.invalid"
+                    style="color: red"
+                  >
+                    Author Name required.
+                  </div>
+                </div>
+              </div>
+            </td>
+        </tr>
+          <tr>
+            <td>
+              <div class="mb-12">
+                <label class="col-lg-8 col-form-label required fs-6">Author Surname</label>
+                <div class="col-lg-12">
+                  <input type="text" formControlName="surname"  class="form-control form-control-lg form-control-solid"  name="surname" id="surname"/>
+                  <div
+                    *ngIf="formAuthor.get('name')?.invalid"
+                    style="color: red"
+                  >
+                    Author Surname required.
+                  </div>
+                </div>
+              </div>
+            </td>
+        </tr>
+          <tr class="d-flex justify-content-end">
+            <td>
+                <button  class="btn btn-danger me-3" (click)="closeAddModal()">Cancel</button>
+                <button [disabled]="formAuthor.invalid" class="btn btn-primary" (click)="add()">Add</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+  </app-modal>
+
+  <app-modal #modalUpdate aria-modal="true">
+    <form [formGroup]="formAuthor" class="form">
+        <table
+          class="table is-bordered is-striped is-hoverable is-fullwidth is-narrow">
+          <tr>
+            <td>
+              <div class="mb-12">
+                <label class="col-lg-8 col-form-label required fs-6">Author Name</label>
+                <div class="col-lg-12">
+                  <input type="text" formControlName="name"  class="form-control form-control-lg form-control-solid"  name="name" id="name"/>
+                  <div
+                    *ngIf="formAuthor.get('name')?.invalid"
+                    style="color: red"
+                  >
+                    Author Name required.
+                  </div>
+                </div>
+              </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <div class="mb-12">
+                <label class="col-lg-8 col-form-label required fs-6">Author Surname</label>
+                <div class="col-lg-12">
+                  <input type="text" formControlName="surname"  class="form-control form-control-lg form-control-solid"  name="surname" id="surname"/>
+                  <div
+                    *ngIf="formAuthor.get('surname')?.invalid"
+                    style="color: red"
+                  >
+                    Author Surname required.
+                  </div>
+                </div>
+              </div>
+            </td>
+        </tr>
+          <tr class="d-flex justify-content-end">
+            <td>
+                <button  class="btn btn-danger me-3" (click)="closeAddModal()">Close</button>
+                <button [disabled]="formAuthor.invalid" class="btn btn-primary" (click)="update()">Update</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+  </app-modal>

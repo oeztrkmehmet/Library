@@ -1,11 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ReactiveFormsModule, FormControl, FormGroup, Validators, FormBuilder, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 import { AuthenticationService } from './authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserForAuthenticationDto } from './models/user.model';
 import { HttpErrorResponse } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { first } from 'rxjs';
+export function passwordValidator(): ValidatorFn {
+  return (control: AbstractControl): ValidationErrors | null => {
+    const value = control.value;
 
+    if (!value) {
+      return null;
+    }
+
+    const hasNumber = /[0-9]/.test(value);
+    const hasUpperCase = /[A-Z]/.test(value);
+    const minLength = value.length >= 4;
+
+    const passwordValid = hasNumber && hasUpperCase && minLength;
+
+    return !passwordValid ? { passwordStrength: true } : null;
+  };
+}
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -17,15 +34,24 @@ import { CommonModule } from '@angular/common';
 export class LoginComponent implements OnInit {
   private returnUrl: string = '';
   loginForm: FormGroup;
+  formRegister: FormGroup;
   errorMessage: string = '';
   showError: boolean = false;
+  isRegister: boolean = false;
 
-  constructor(private authService: AuthenticationService, private router: Router, private route: ActivatedRoute) {
+  constructor(private authService: AuthenticationService, private router: Router, private route: ActivatedRoute,private fb: FormBuilder) {
     this.loginForm = new FormGroup({
       userName: new FormControl('userName', [Validators.required]),
       password: new FormControl('password', [Validators.required])
     });
+    this.formRegister = this.fb.group({
+      userNameRegister: [null, [Validators.required, Validators.email]],
+      passwordRegister: [null, [Validators.required,passwordValidator()]],
+      nameSurname: [null, [Validators.required]],
+      phoneNumber: [null, [Validators.required]],
+    });
   }
+  
 
   ngOnInit(): void {
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
@@ -61,4 +87,41 @@ export class LoginComponent implements OnInit {
         }
       });
   }
+  openRegister(){
+    this.formRegister.reset();
+    this.isRegister=true;
+  }
+  CloseRegister(){
+    this.formRegister.reset();
+    this.isRegister=false;
+  }
+
+
+  registerUser() {
+    if (this.formRegister.valid) {
+     
+      this.authService.registerUser({
+        userName: this.formRegister.value.userNameRegister,
+        password: this.formRegister.value.passwordRegister, 
+        nameSurname: this.formRegister.value.nameSurname,
+        phoneNumber: this.formRegister.value.phoneNumber
+      }).pipe(first()).subscribe(
+        (response) => {
+          console.log('Author added successfully', response);
+          this.CloseRegister();
+          this.formRegister.reset();
+          // this.loginForm.reset();
+        },
+        (error) => {
+          console.error('Error adding Author', error);
+          this.CloseRegister();
+          this.formRegister.reset();
+          // this.loginForm.reset();
+        }
+      );
+    } else {
+      window.alert('Zorunlu Alanları Giriniz.');
+    }
+  }
+  
 }

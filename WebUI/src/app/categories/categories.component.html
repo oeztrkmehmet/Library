@@ -1,14 +1,14 @@
-<div class="container">
-    <div class="text-end mb-3">
-        <button class="btn btn-primary">
-            <i class="bi bi-plus"></i> Ekle
+<div class="container-fluid">
+  <div class="text-end mb-3">
+        <button class="btn btn-primary" (click)="openAdd()">
+            <i class="bi bi-plus"></i> Add
         </button>
     </div>
     <table class="table">
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">First Name</th>
+                <th scope="col">Category Name</th>
                 <th scope="col">Actions</th>
             </tr>
         </thead>
@@ -17,44 +17,87 @@
                 <th scope="row">{{ i + 1 }}</th>
                 <td>{{ category.name }}</td>
                 <td>
-                    <button class="btn btn-info btn-sm me-2">
-                        <i class="bi bi-eye"></i> Görüntüle
+                  
+                    <button class="btn btn-warning btn-sm me-2"(click)="EditWithOpen(category.id)">
+                        <i class="bi bi-pencil" ></i> Update
                     </button>
-                    <button class="btn btn-warning btn-sm me-2"(click)="openopen()">
-                        <i class="bi bi-pencil" ></i> Güncelle
-                    </button>
-                    <button class="btn btn-danger btn-sm">
-                        <i class="bi bi-trash"></i> Sil
+                    <button class="btn btn-danger btn-sm" (click)="openDelete(category.id)">
+                        <i class="bi bi-trash"></i> Delete
                     </button>
                 </td>
             </tr>
         </tbody>
     </table>
 </div>
-<!-- <div #modal class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+
+  
+
+
+
+
+  <app-modal #modalDelete  aria-modal="true">
+    <div class="col-xs-12 text-center" (click)="deleteCategoryById()">
+    <button type="button" class="btn btn-danger">Yes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeAddModal()">No</button>
         </div>
-        <div class="modal-body">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <app-modal #modal  aria-modal="true">
-    <div class="col-xs-12 text-center">
-      <i class="fa-solid fa-check call-tick"></i>
-      <h3>title</h3>
-      <p >deneme</p>
-     
-    </div>
   </app-modal>
 
+  <app-modal #modalAdd  aria-modal="true">
+    <form [formGroup]="formCategory" class="form">
+        <table
+          class="table is-bordered is-striped is-hoverable is-fullwidth is-narrow">
+          <tr>
+            <td>
+              <div class="mb-12">
+                <label class="col-lg-8 col-form-label required fs-6">Category Name</label>
+                <div class="col-lg-12">
+                  <input type="text" formControlName="name"  class="form-control form-control-lg form-control-solid"  name="name" id="name"/>
+                  <div
+                    *ngIf="formCategory.get('name')?.invalid"
+                    style="color: red"
+                  >
+                    Category Name required.
+                  </div>
+                </div>
+              </div>
+            </td>
+        </tr>
+          <tr class="d-flex justify-content-end">
+            <td>
+                <button  class="btn btn-danger me-3" (click)="closeAddModal()">Close</button>
+                <button [disabled]="formCategory.invalid" class="btn btn-primary" (click)="add()">Add</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+  </app-modal>
 
+  <app-modal #modalUpdate aria-modal="true">
+    <form [formGroup]="formCategory" class="form">
+        <table
+          class="table is-bordered is-striped is-hoverable is-fullwidth is-narrow">
+          <tr>
+            <td>
+              <div class="mb-12">
+                <label class="col-lg-8 col-form-label required fs-6">Category Name</label>
+                <div class="col-lg-12">
+                  <input type="text" formControlName="name"  class="form-control form-control-lg form-control-solid"  name="name" id="name"/>
+                  <div
+                    *ngIf="formCategory.get('name')?.invalid"
+                    style="color: red"
+                  >
+                    Category Name required.
+                  </div>
+                </div>
+              </div>
+            </td>
+        </tr>
+          <tr class="d-flex justify-content-end">
+            <td>
+                <button  class="btn btn-danger me-3" (click)="closeAddModal()">Close</button>
+                <button [disabled]="formCategory.invalid" class="btn btn-primary" (click)="update()">Update</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+  </app-modal>

@@ -6,3 +6,9 @@ export interface UserForAuthenticationDto {
 export interface AuthResponseDto {
     response: string;
 }
+export interface RegisterModel {
+    userName: string;
+    password: string;
+    nameSurname: string;
+    phoneNumber: string;
+  }

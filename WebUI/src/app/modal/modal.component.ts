@@ -13,16 +13,12 @@ declare var $: any; // jQuery'nin türünü bildiriyoruz
 export class ModalComponent {
   @ViewChild('modal') modal?: ElementRef;
 title:string ='';
-content:string ='';
-  openModal(title:string,content:string) {
+  openModal(title:string) {
    
     this.title=title;
-    this.content=content;
       $(this.modal?.nativeElement).modal('show');
   }
   closeModal() {
-    console.log('metoda geldi')
-    alert(this.modal?.nativeElement)
       $(this.modal?.nativeElement).modal('hide');
   }
 }

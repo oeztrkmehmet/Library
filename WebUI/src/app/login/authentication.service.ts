@@ -1,7 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { UserForAuthenticationDto } from './models/user.model';
+import { RegisterModel, UserForAuthenticationDto } from './models/user.model';
 import { environment } from '../../environment/environment';
 
 @Injectable({
@@ -31,6 +31,12 @@ export class AuthenticationService {
     return this.http.post(urlWithParams, userForAuth, { responseType: 'text' });
  
     
+  }
+
+  registerUser(registerModel: RegisterModel): Observable<any> {
+    const urlWithParams = `${this.apiUrl}/${'api/Account/Register'}`;
+
+    return this.http.post<any>(urlWithParams, registerModel);
   }
 
  
